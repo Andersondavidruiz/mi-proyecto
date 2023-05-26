@@ -1,0 +1,178 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: general;
+}
+@font-face{
+  font-family:titulo;        
+  src:url('BrunoAceSC-Regular.ttf')
+}
+@font-face{
+  font-family:general;
+  src:url('BrunoAceSC-Regular.ttf')
+}
+body{
+  background-color:black;
+}
+#encabezado{
+    background-color: black;
+    padding-bottom: 20px;
+}
+a{
+    text-decoration: none;
+    color: rgb(50, 50, 255);
+    text-align: center;
+}
+#navegador{
+    color: rgb(50, 50, 255);
+    box-shadow: 0px 3px 3px white;
+}
+#navegador h1{
+    font-size: 45px;
+    font-family:titulo;
+}
+#navegador input{
+    width: 400px; 
+    border-radius: 10px;
+    margin-left:100px;
+    padding-left: 10px;
+}
+.menu {
+  display: inline-flex;
+  color: blue;
+  font-size: 35px;
+  margin-left:30px; 
+  margin-bottom:5px;
+}
+.mas{
+float: right;
+margin-right:40px;
+margin-top: 10px;
+
+}
+.mas:hover{
+    background-color: rgba(255, 255, 255, 0.616);
+    border-radius: 10px;
+}
+.contenido {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  color: blue;
+  font-size: 20px;
+}
+.contenido div {
+  margin-left: 60px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  padding-right:10px;
+  border:1px rgba(255, 255, 255, 0.6) outset;
+  border-radius: 10px;
+}
+.contenido div:hover{
+  transform: scale(1.1);
+  transition: 0.8s;
+}
+.img{
+  height: 175px;
+  width: 350px;
+  margin-top: 10px;
+  margin-left: 10px;
+  border-radius: 15px;
+}
+
+.contenido p{
+  width: 300px;
+  margin-left: 15px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+
+}
+#categoria{
+  color: rgb(50, 50, 255);
+  box-shadow: 0px 1px 1px white;
+  display: inline-flex;
+  width:100%;
+}
+#categoria a{
+  margin-top: 30px;
+  margin-left: 85px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+.boton{
+    text-align: center;
+    font-size: 16px;
+    height: 40px;
+    width: 139px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 10px; 
+    cursor: pointer;
+}
+#accion{
+    background-color: yellow;
+
+}
+#carreras{
+    background-color: brown;
+}
+#RPG{
+    background-color: orangered;
+}
+#supervivencia{
+    background-color: aqua;
+}
+#terror{
+    background-color: chartreuse;
+}
+#armas{
+    background-color: darkgreen;
+}  
+.carousel-container {
+    position: relative;
+    width: 92%;
+    margin: 0 auto;
+  }
+  .carousel-slide {
+    display: flex;
+    width: 100%;
+  }
+  .carousel-slide img {
+    width: 100%;
+    height: 100%;
+  }
+  .img-carrusel {
+    width: 300px;
+  }
+ 
+  .slide-container {
+    position: relative;
+    height: 180px;
+    overflow: hidden;
+  }
+  .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 90%;
+    width: 100%;
+    animation: slideAnimation 22s linear infinite ;
+    
+  }
+
+
+  @keyframes slideAnimation {
+    0% {
+      transform: translateX(0%);
+      animation-play-state: running; /* Agregado para iniciar la animación */
+    }
+    100% {
+      transform: translateX(-100%);
+      animation-play-state: running; /* Agregado para iniciar la animación */
+    }
+  }
+  
+
+  
